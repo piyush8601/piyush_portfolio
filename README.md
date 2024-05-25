@@ -16,3 +16,9 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/piyush8601/piyush_portfolio.git
 git push -u origin main
+
+# For futur changes we have to do these commands
+- git add .
+- git commit -m "what we new add"
+- git push
+- 
