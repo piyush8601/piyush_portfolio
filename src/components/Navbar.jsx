@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className=' mb-20 flex items-center justify-between py-6'>
         <div className='flex flex-shrink-0 items-center'>
-          <a href="/">
+          <a href="">
             <img className='mx-2 w-14 bg-none' src={PGlogo} alt="logo" />
           </a>
         </div>
