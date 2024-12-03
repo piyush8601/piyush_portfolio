@@ -30,23 +30,25 @@ export const EXPERIENCES = [
     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
     technologies: ["HTML", "CSS", "Javascript",]
   },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
+  
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Scatch: E-Commerce Platform",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link : "https://github.com/piyush8601?tab=repositories"
+    technologies: ["EJS", "Node.js", "MongoDB", "TailwindCSS"],
+    link : "https://github.com/piyush8601/Scatch"
+  },
+  {
+    title: "Zentry Game Website",
+    image: project4,
+    description:
+      "A platform for creating and publishing blog posts, with features like user Authentication and Users Posts, Like & Unlike, and user profiles. It is mainly a backend Project I used EJS & Tailwind for Frontend.",
+    technologies: ["EJS", "NodeJs", "Express", "MongoDB"],
+    link : "https://zenith-fzxy4gzxs-piyush-guptas-projects-56081406.vercel.app/",
   },
   {
     title: "Amazon.com Frontend Clone with Animation",
@@ -54,7 +56,7 @@ export const PROJECTS = [
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "Javascript", "GSAP"],
-    link : "https://github.com/piyush8601/Amazon-Clone-Using-GSAP-HTML-CSS"
+    link : "https://piyush8601.github.io/Amazon-Clone-Using-GSAP-HTML-CSS/"
   },
   {
     title: "Portfolio Website",
@@ -64,14 +66,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Tailwind"],
     link : "",
   },
-  {
-    title: "Blog Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like user Authentication and Users Posts, Like & Unlike, and user profiles. It is mainly a backend Project I used EJS & Tailwind for Frontend.",
-    technologies: ["EJS", "NodeJs", "Express", "MongoDB"],
-    link : "https://github.com/piyush8601?tab=repositories",
-  },
+  
 ];
 
 export const CONTACT = {
