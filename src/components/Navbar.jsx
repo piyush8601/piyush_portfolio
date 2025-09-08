@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../assets/kevinRushLogo.png";
 import PGlogo from "../assets/pgLogo.png"
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';

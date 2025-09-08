@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaNodeJs } from 'react-icons/fa'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiExpress, SiMongodb, SiMysql } from 'react-icons/si'
+import { SiExpress, SiMongodb, SiMysql, SiNestjs, SiRedis, SiKeycloak } from 'react-icons/si'
+import { BiLogoPostgresql } from "react-icons/bi"
 import { TbBrandNextjs } from 'react-icons/tb';
 import { motion } from "framer-motion";
 
@@ -33,25 +34,18 @@ const Technologies = () => {
          
          className='flex flex-wrap items-center justify-center gap-4'>
             <motion.div
-             variants={iconVariants(2.5)}
+             variants={iconVariants(3)}
              initial="initial"
              animate="animate"
              className='rounded-2xl border-2 border-neutral-800 p-3'>
-                <RiReactjsLine className='text-5xl text-cyan-400'/>
+                <FaNodeJs className='text-5xl text-green-500'/>
             </motion.div>
             <motion.div
              variants={iconVariants(3)}
              initial="initial"
              animate="animate"
              className='rounded-2xl border-2 border-neutral-800 p-3'>
-                <TbBrandNextjs className='text-5xl '/>
-            </motion.div>
-            <motion.div 
-             variants={iconVariants(4)}
-             initial="initial"
-             animate="animate"
-             className='rounded-2xl border-2 border-neutral-800 p-3'>
-                <SiMongodb className='text-5xl text-green-500'/>
+                <SiNestjs className='text-5xl text-red-500'/>
             </motion.div>
             <motion.div 
              variants={iconVariants(5)}
@@ -65,7 +59,21 @@ const Technologies = () => {
              initial="initial"
              animate="animate"
              className='rounded-2xl border-2 border-neutral-800 p-3'>
-                <FaNodeJs className='text-5xl text-green-500'/>
+                <BiLogoPostgresql className='text-5xl text-blue-200'/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(3)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <SiRedis className='text-5xl text-red-500'/>
+            </motion.div>
+            <motion.div 
+             variants={iconVariants(4)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <SiMongodb className='text-5xl text-green-500'/>
             </motion.div>
             <motion.div 
              variants={iconVariants(2.5)}
@@ -73,6 +81,27 @@ const Technologies = () => {
              animate="animate"
              className='rounded-2xl border-2 border-neutral-800 p-3'>
                 <SiMysql className='text-5xl text-zinc-100'/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(2.5)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <SiKeycloak className='text-5xl text-blue-500'/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(2.5)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <RiReactjsLine className='text-5xl text-cyan-400'/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(3)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <TbBrandNextjs className='text-5xl '/>
             </motion.div>
         </motion.div>
     </div>

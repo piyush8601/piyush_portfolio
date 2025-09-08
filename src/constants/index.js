@@ -1,20 +1,22 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a Backend Software Engineer at Appinventiv Technologies with 6 months of experience in Node.js, NestJS, Express, and TypeScript.
+I specialize in building scalable backend systems, working with PostgreSQL, MongoDB, Redis, Kafka, and RabbitMQ.
+Passionate about clean code and performance optimization, I focus on delivering reliable and efficient server-side solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 1 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a Backend Software Engineer at Appinventiv Technologies with 6 months of experience in designing and developing scalable backend solutions. My primary focus is on building reliable server-side applications using Node.js, NestJS, Express, and TypeScript.
+I have hands-on experience working with relational and non-relational databases such as PostgreSQL and MongoDB, implementing caching mechanisms with Redis, and building event-driven architectures using Kafka and RabbitMQ.
+My work involves writing clean, maintainable code, optimizing APIs for performance, and ensuring seamless integration between services. I am passionate about solving backend challenges, learning new technologies, and contributing to high-quality, production-ready systems.`;  
 
 export const EXPERIENCES = [
   {
-    year: "May 2024 - Present",
-    role: "Systems Administrator Intern",
-    company: "ServiceNow Inc.",
-    description: `I am currently learning from the course which is assigned to the interns for internship.
-    I will update when I know what i have to do.`,
-    technologies: ["Sql", "Systems Administration"],
+    year: "March 2025 - Present",
+    role: "Software Trainee (Node Js)",
+    company: "Appinventiv Pvt Ltd",
+    description: `I am a Backend Software Engineer at Appinventiv Technologies with 6 months of experience in designing and developing scalable backend solutions. My primary focus is on building reliable server-side applications using Node.js, NestJS, Express, and TypeScript.
+    My expertise spans across modern backend technologies, including Node.js, NestJS, Express, and TypeScript, and I am proficient in working with databases like PostgreSQL and MongoDB, as well as caching solutions such as Redis. I also have practical experience in building event-driven architectures and message-driven systems using Kafka and RabbitMQ.`,
+    technologies: ["NodeJs", "NestJS", "Express", "TypeScript", "PostgreSQL", "Redis", "Kafka", "RabbitMQ", "MongoDB"],
   },
   {
     year: "Mar 2024 - Apr 2024",
@@ -22,25 +24,16 @@ export const EXPERIENCES = [
     company: "EY GDS- AICTE Internship",
     description: `Designed and developed user interfaces for web applications using React.Js. Worked closely with backend developers to integrate frontend components with Django APIs. Implemented responsive designs and optimized frontend performance.`,
     technologies: ["HTML", "CSS", "Javascript", "Django", "ReactJs"],
-  },
-  {
-    year: "2023 - 2023",
-    role: "Web Developer Intern",
-    company: "Bharat Intern",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["HTML", "CSS", "Javascript",]
-  },
-  
+  }
 ];
 
 export const PROJECTS = [
   {
-    title: "Scatch: E-Commerce Platform",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["EJS", "Node.js", "MongoDB", "TailwindCSS"],
-    link : "https://github.com/piyush8601/Scatch"
+    title: "E-commerce Microservices",
+    image: "https://enexa.in/images/ecommerce-1.jpg",
+    description: "A backend Microservices for e-commerce website with features like product listing, shopping cart, and user authentication with complete 8 microservices.",
+    technologies: ["Node.js", "MongoDB", "NestJS", "TypeScript", "Redis", "Kafka", "RabbitMQ", "Stripe"],
+    link: "https://github.com/piyush8601/e-Commerce-Microservices"
   },
   {
     title: "Zentry Game Website",
@@ -48,29 +41,19 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like user Authentication and Users Posts, Like & Unlike, and user profiles. It is mainly a backend Project I used EJS & Tailwind for Frontend.",
     technologies: ["EJS", "NodeJs", "Express", "MongoDB"],
-    link : "https://zenith-fzxy4gzxs-piyush-guptas-projects-56081406.vercel.app/",
+    link: "https://zenith-fzxy4gzxs-piyush-guptas-projects-56081406.vercel.app/",
   },
   {
-    title: "Amazon.com Frontend Clone with Animation",
-    image: project2,
+    title: "Blog Website",
+    image: project1,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Javascript", "GSAP"],
-    link : "https://piyush8601.github.io/Amazon-Clone-Using-GSAP-HTML-CSS/"
+      "A platform for creating and publishing blog posts, with features like user Authentication and Users Posts, Like & Unlike, and user profiles. It is mainly a backend Project I used EJS & Tailwind for Frontend.",
+    technologies: ["EJS", "Node.js", "MongoDB", "TailwindCSS"],
+    link: "https://github.com/piyush8601/scatch"
   },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
-    link : "",
-  },
-  
 ];
 
 export const CONTACT = {
-  address: "Near Kiet Group Of Institutions, Ghaziabad",
-  phoneNo: "+91 ************",
+  address: "Noida, Uttar Pradesh, India",
   email: "piyushgupta8601@gmail.com",
 };

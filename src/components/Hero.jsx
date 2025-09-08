@@ -12,13 +12,13 @@ const Hero = () => {
   return (
     <div className='border-b border-neutral-900 px pb-4 lg:mb-35'>
         <div className='flex flex-wrap'>
-            <div className='w-full lg:w-1/2'>
+            <div className='w-full lg:w-1/2 lg:p-8'>
                 <div className='flex flex-col items-center lg:items-start'>
                     <motion.h1 
                      variants={container(0)}
                      animate="visible"
                      initial="hidden"
-                     className='pb-8 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'
+                     className='pb-8 text-6xl font-light tracking-tight lg:mt-16 lg:text-8xl'
                     >
                         Piyush Gupta
                     </motion.h1>
@@ -36,7 +36,7 @@ const Hero = () => {
                      className="my-2 max-w-xl py-6 font-light tracking-tighter"> {HERO_CONTENT} 
                     </motion.p>
                     <motion.a 
-                     href="https://drive.google.com/file/d/12W2HCo0I16_a6V7ogzKYo6k9RrcBGQlw/view?usp=sharing"
+                     href="https://drive.google.com/file/d/13auii75aBAL9Ns7huee3D8j6B4axxQJD/view?usp=sharing"
                      target='_blank'
                      variants={container(1.1)}
                      animate="visible"
@@ -51,7 +51,7 @@ const Hero = () => {
                      initial={{x : 100, opacity : 0}}
                      animate={{x : 0, opacity:1}}
                      transition={{duration: 1, delay: 0.2}}
-                     src={profilepic} alt="Kevin Rush" />
+                     src={profilepic} alt="Piyush Gupta" />
                 </div>
             </div>
         </div>
