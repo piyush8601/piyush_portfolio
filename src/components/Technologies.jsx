@@ -1,8 +1,10 @@
 import React from 'react'
 import { FaNodeJs } from 'react-icons/fa'
 import { RiReactjsLine } from 'react-icons/ri'
-import { SiExpress, SiMongodb, SiMysql, SiNestjs, SiRedis, SiKeycloak } from 'react-icons/si'
+import { SiExpress, SiMongodb, SiMysql, SiNestjs, SiRedis, SiKeycloak, SiDocker } from 'react-icons/si'
 import { BiLogoPostgresql } from "react-icons/bi"
+import { FaGithub } from "react-icons/fa6";
+import { FcLinux } from "react-icons/fc"
 import { TbBrandNextjs } from 'react-icons/tb';
 import { motion } from "framer-motion";
 
@@ -102,6 +104,27 @@ const Technologies = () => {
              animate="animate"
              className='rounded-2xl border-2 border-neutral-800 p-3'>
                 <TbBrandNextjs className='text-5xl '/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(3)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <FcLinux className='text-5xl '/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(3)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <FaGithub className='text-5xl '/>
+            </motion.div>
+            <motion.div
+             variants={iconVariants(3)}
+             initial="initial"
+             animate="animate"
+             className='rounded-2xl border-2 border-neutral-800 p-3'>
+                <SiDocker className='text-5xl text-blue-400'/>
             </motion.div>
         </motion.div>
     </div>
