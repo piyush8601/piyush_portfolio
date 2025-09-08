@@ -1,4 +1,3 @@
-import project1 from "../assets/projects/project-1.jpg";
 import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a Backend Software Engineer at Appinventiv Technologies with 6 months of experience in Node.js, NestJS, Express, and TypeScript.
@@ -45,7 +44,7 @@ export const PROJECTS = [
   },
   {
     title: "Blog Website",
-    image: project1,
+    image: "https://www.sitesaga.com/wp-content/uploads/2022/09/blog-site-examples.png",
     description:
       "A platform for creating and publishing blog posts, with features like user Authentication and Users Posts, Like & Unlike, and user profiles. It is mainly a backend Project I used EJS & Tailwind for Frontend.",
     technologies: ["EJS", "Node.js", "MongoDB", "TailwindCSS"],
