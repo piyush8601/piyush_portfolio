@@ -25,7 +25,11 @@ const About = () => {
              transition={{duration: 0.5}}
              className="w-full lg:w-1/2">
                 <div className="flex justify-center lg:justify-start">
-                    <p className="my-2 max-w-xl py-6">{ABOUT_TEXT} </p>
+                    <ul className="my-2 max-w-xl list-disc space-y-4 py-6 pl-5 text-neutral-300 marker:text-purple-400">
+                        {ABOUT_TEXT.map((point) => (
+                            <li key={point}>{point}</li>
+                        ))}
+                    </ul>
                 </div>
             </motion.div>
         </div>
