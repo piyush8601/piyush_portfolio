@@ -1,52 +1,77 @@
-import { PROJECTS } from "../constants"
+import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
-        <motion.h2
-         whileInView={{opacity: 1, y : 0}}
-         initial={{opacity : 0, y : -100}}
-         transition={{duration : 0.5}}
-         className="my-20 text-center text-4xl">Projects</motion.h2>
-        <div>
-            {PROJECTS.map((project, index) => (
-                <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                    <motion.div
-                     whileInView={{opacity: 1, x : 0}}
-                     initial={{opacity : 0, x : -100}}
-                     transition={{duration : 1}}
-                     className="w-full lg:w-1/4">
-                        <img src={project.image}
-                         width={150}
-                         height={150}
-                         alt={project.title}
-                         className="mb-6 rounded"
-                        />
-                    </motion.div>
-                    <motion.div
-                     whileInView={{opacity: 1, x : 0}}
-                     initial={{opacity : 0, x : 100}}
-                     transition={{duration : 1}}
-                     className="w-full max-w-xl lg:w-3/4">
-                        <div className="flex items-baseline  gap-5">
-                            <h6 className="mb-2 font-semibold">{project.title}</h6>
-                            <a className="text-sm flex items-center gap-1 hover:underline text-yellow-400" href={project.link} target="_blank">Link<FiExternalLink /></a>
-                        </div>
-                        <p className="mb-4 text-neutral-400">{project.description}</p>
-                        <div className="flex flex-wrap">
-                            {project.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
-                            ))}
-                        </div>
-                    </motion.div>
-                </div>
-            ))}
-            <div></div>
-        </div>
+    <div className="border-b border-neutral-900 pb-16">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Projects
+      </motion.h2>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+        {PROJECTS.map((project, index) => (
+          <motion.article
+            key={project.title}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 40, scale: 0.97 }}
+            transition={{
+              duration: 0.65,
+              delay: (index % 2) * 0.14,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            viewport={{ once: false, amount: 0.25 }}
+            className="group overflow-hidden rounded-xl border border-neutral-800 bg-neutral-950/60 transition-all duration-300 hover:-translate-y-1 hover:border-purple-800 hover:shadow-xl hover:shadow-purple-950/20"
+          >
+            <img
+              src={project.image}
+              alt={`${project.title} project`}
+              className="h-40 w-full bg-neutral-900 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="p-4">
+              <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-base font-semibold text-neutral-100">
+                  {project.title}
+                </h3>
+                {project.isInternal ? (
+                  <span className="rounded-full border border-purple-800/70 bg-purple-950/50 px-3 py-1 text-xs font-medium text-purple-300">
+                    Enterprise Project
+                  </span>
+                ) : project.link ? (
+                  <a
+                    className="flex shrink-0 items-center gap-1 text-sm text-yellow-400 hover:underline"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`View ${project.title}`}
+                  >
+                    View project <FiExternalLink />
+                  </a>
+                ) : null}
+              </div>
+              <p className="text-sm leading-5 text-neutral-400">
+                {project.description}
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded bg-neutral-900 px-2.5 py-1 text-xs font-medium text-purple-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.article>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

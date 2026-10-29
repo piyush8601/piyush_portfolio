@@ -84,7 +84,7 @@ const Hero = () => {
                             className="my-2 max-w-xl py-6 font-light tracking-tighter"> {HERO_CONTENT}
                         </motion.p>
                         <motion.a
-                            href="https://drive.google.com/file/d/13auii75aBAL9Ns7huee3D8j6B4axxQJD/view?usp=sharing"
+                            href="https://drive.google.com/drive/folders/1J3jsW2uR2w_SGXBjx7CUpsJn5z6z6Sos"
                             target='_blank'
                             variants={container(1.1)}
                             animate="visible"
